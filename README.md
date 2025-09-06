@@ -142,7 +142,7 @@ live2d_ai/
 
 * **g4f** is intended for **research/educational purposes only**. It is unstable and may fail at times.
 * For stable use, switch to **Gemini API** or **Ollama (local LLM)**.
-* **gTTS** requires internet access and may have a few seconds of delay → the frontend shows `"🤔 Thinking..."` to improve UX.
+* **gTTS** requires internet access and may have a few seconds of delay
 
 ---
 
