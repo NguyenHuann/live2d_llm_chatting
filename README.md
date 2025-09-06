@@ -1,8 +1,3 @@
-Here’s a polished **English version** of your `README.md` for the project:
-
----
-
-````markdown
 # Emu • AI Live2D Chat
 
 An **AI VTuber** powered by **FastAPI + Live2D + g4f (LLM) + gTTS (TTS)**.  
@@ -155,6 +150,5 @@ live2d_ai/
 
 This project is for **educational / research purposes only**, not for commercial use.
 
-```
 
 
