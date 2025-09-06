@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Emu • AI Live2D Chat</title>
+
+  <!-- favicon -->
+  <link rel="icon" href="/static/favicon.ico">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="avatar-pane">
+      <div class="avatar-card">
+          <div class="avatar-bg"></div>
+        <canvas id="live2dCanvas" class="live2d"></canvas>
+        <div class="avatar-fallback">
+<!--          Live2D<br><span>đang chờ tích hợp</span>-->
+        </div>
+      </div>
+    </aside>
+
+    <main class="chat-pane">
+      <header class="chat-header">
+        <div class="title"><span class="dot"></span> Emu • AI VTuber</div>
+        <div class="subtitle">Chat</div>
+      </header>
+
+      <section id="messages" class="messages"></section>
+
+      <footer class="chat-input">
+        <input id="msg" type="text" placeholder="Nhập tin nhắn..." />
+        <button id="send">Gửi</button>
+      </footer>
+    </main>
+  </div>
+
+  <!-- audio phát giọng -->
+  <audio id="voice" preload="auto"></audio>
+
+  <!-- App JS (chat, gọi API) -->
+  <script src="/static/main.js"></script>
+
+  <!-- Pixi & Live2D (LOCAL – không phụ thuộc CDN) -->
+  <script src="/static/vendor/live2d/live2d.min.js"></script>
+  <script src="/static/vendor/live2d/live2dcubismcore.min.js"></script>
+
+  <script src="/static/vendor/pixi/pixi.min.js"></script>
+  <script src="/static/vendor/live2d/index.min.js"></script>
+  <script src="/static/vendor/live2d/cubism4.min.js"></script>
+
+  <script>
+    window.LIVE2D_MODEL_JSON = "/static/live2d/14emu_sports02_t01/14emu_sports02_t01.model3.json";
+  </script>
+
+  <!-- Live2D glue (khởi tạo + lip-sync) -->
+  <script>
+  window.LIVE2D_BOTTOM_OFFSET = 60;  // thử 20–60 tuỳ model
+  </script>
+  <script src="/static/live2d.js?v=9"></script>
+</body>
+</html>
