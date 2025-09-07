@@ -2,7 +2,8 @@
 
 An **AI VTuber** powered by **FastAPI + Live2D + g4f (LLM) + gTTS (TTS)**.  
 Users can chat with a virtual character, rendered in Live2D on the web, with lip-sync and synthesized voice in Vietnamese.
-<https://live2d-llm-chatting.onrender.com>
+
+Open preview: [https://live2d-llm-chatting.onrender.com](https://live2d-llm-chatting.onrender.com)
 
 ---
 ![Preview](static/images/preview.png)
