@@ -4,7 +4,7 @@ An **AI VTuber** powered by **FastAPI + Live2D + g4f (LLM) + gTTS (TTS)**.
 Users can chat with a virtual character, rendered in Live2D on the web, with lip-sync and synthesized voice in Vietnamese.
 
 ---
-
+![Preview](static/images/preview.png)
 ## 🚀 Features
 
 - **Backend**: FastAPI serving chat API and speech synthesis (gTTS).
@@ -142,7 +142,7 @@ live2d_ai/
 
 * **g4f** is intended for **research/educational purposes only**. It is unstable and may fail at times.
 * For stable use, switch to **Gemini API** or **Ollama (local LLM)**.
-* **gTTS** requires internet access and may have a few seconds of delay → the frontend shows `"🤔 Thinking..."` to improve UX.
+* **gTTS** requires internet access and may have a few seconds of delay
 
 ---
 
